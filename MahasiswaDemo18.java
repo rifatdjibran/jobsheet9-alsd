@@ -40,10 +40,13 @@ import java.util.Scanner;
                          int nilai = scan.nextInt();
                          dinilai.tugasDinilai(nilai);
                          System.out.printf("Nilai tugas %s adalah %d\n", dinilai.nama, nilai);
+                         String biner = stack.konversiDesimalKeBiner(nilai);
+                         System.out.println("Nilai Biner Tugas: " + biner);
                      } else {
                          System.out.println("Tidak ada tugas untuk dinilai.");
                      }
                      break;
+                 
                  case 3:
                      Mahasiswa18 lihat = stack.peek();
                      if (lihat != null) {
